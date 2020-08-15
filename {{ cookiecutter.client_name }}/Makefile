@@ -8,8 +8,7 @@ help:  ## This help
 keys:  ## Generate the private/public key
 	 wg genkey |  tee {{ cookiecutter.client_name }}.key | wg pubkey |  tee {{ cookiecutter.client_name }}.key.pub
 	 chmod 600 {{ cookiecutter.client_name }}.key
-	 PKEY=$(shell cat {{ cookiecutter.client_name }}.key)
-	 sed -i -e "s/PRIVATE_KEY/$$PKEY/g" {{ cookiecutter.client_name }}.conf
+	 /bin/bash update-conf.sh
 
 qrcode: ## Generate the qrcode (e.g. to be used on an android client)
 	curl https://raw.githubusercontent.com/tiagoprn/devops/master/shellscripts/utils/txt-to-qrcode.sh -o /usr/bin/txt-to-qrcode.sh
