@@ -4,6 +4,9 @@ This cookiecutter generates key pairs and the configuration of a wireguard
 client, encoding the configuration on a qrcode so that it can be used to
 generate configuration e.g. for a mobile client.
 
+IMPORTANT: The VPN created here only redirects traffic on the IP mask `13.0.0.0/24` - as
+opposed to `0.0.0.0/0` (all internet traffic).
+
 ## Requisites
 
 - qrencode
