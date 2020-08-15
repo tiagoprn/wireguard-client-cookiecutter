@@ -12,6 +12,12 @@ generate configuration e.g. for a mobile client.
 
 ## How to use
 
+Go to `/etc/wireguard/clients`, then:
+
+```
+$ cookiecutter gh:tiagoprn/wireguard-client-cookiecutter
+```
+
 After running the cookiecutter feeding it with the desired information, enter
 the folder created with the client name and run:
 
