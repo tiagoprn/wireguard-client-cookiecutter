@@ -1,6 +1,6 @@
 {
     "client_name": "android",
-    "client_network_ip_address": "13.0.0.100/24",
+    "client_network_ip_address": "13.0.0.100/32",
     "dns": "208.67.222.222, 208.67.220.220",
     "host_public_key": "",
     "host_public_ip_address": ""
